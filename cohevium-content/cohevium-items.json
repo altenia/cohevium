@@ -1,0 +1,39 @@
+{
+    "description": "Cohevioum Item description",
+    "version": "1.0",
+    "appInfo": {
+            "name": "Cohevium",
+            "description": "Content Manager"
+        },
+    "items": [
+        {
+            "name" : "content",
+            "module" : "html",
+            "renderer": "HtmlFileRenderer",
+            "config": {
+            }
+        },
+        {
+            "name": "side_menu",
+            "module": "menu",
+            "renderer": "MenuRenderer",
+            "config": {
+                "menu_items": [
+                    {
+                        "title": "About",
+                        "icon": "",
+                        "type": "url",
+                        "ref": "/cohevium/content/about.html"
+                    },
+                    {
+                        "title": "Repodium",
+                        "icon": "",
+                        "type": "url",
+                        "ref": "/repodium/public/index.html"
+                    }
+                ]
+            }
+        }
+
+    ]
+}

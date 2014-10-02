@@ -1,0 +1,9 @@
+{
+	"port": 9091,
+	"contentBaseDir": null,
+
+	"log": {
+		"level": "debug",
+		"logToScreen": true
+	}
+}

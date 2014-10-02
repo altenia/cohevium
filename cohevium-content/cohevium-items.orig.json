@@ -1,0 +1,35 @@
+{
+    "description": "Cohevioum Item description",
+    "version": "1.0",
+    "items": [
+        {
+            "name" : "content",
+            "module" : "html",
+            "renderer": "HtmlFileRenderer",
+            "config": {
+            }
+        },
+        {
+            "name": "side_menu",
+            "module": "menu",
+            "renderer": "menu",
+            "config": {
+                "menu_items": [
+                    {
+                        "title": "Repodium",
+                        "icon": "",
+                        "type": "url",
+                        "ref": "/repodium/public/index.html"
+                    },
+                    {
+                        "title": "Testpage (xhtml/dynamic loading)",
+                        "icon": "",
+                        "type": "url",
+                        "ref": "/repodium/public/index.html"
+                    }
+                ]
+            }
+        }
+
+    ]
+}
