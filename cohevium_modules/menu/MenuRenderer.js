@@ -21,7 +21,6 @@ module.exports.MenuRenderer = function(logger, appSettings, moduleConfig) {
             }
         }
         contentData += '</ul>';
-console.log(contentData);
 
         callback(null, contentData);
     };
