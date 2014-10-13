@@ -30,6 +30,12 @@
                         "icon": "",
                         "type": "url",
                         "ref": "/repodium/public/index.html"
+                    },
+                    {
+                        "title": "Test",
+                        "icon": "",
+                        "type": "url",
+                        "ref": "/cohevium/content/iframe.html?title=test&source=http%3A%2F%2Fdev-11-brixweb-0-77516998.us-east-1.elb.amazonaws.com%2Fbrix-websy%2Fbrix%2Ftests%2Fintegration%2Ftestpage-divs-d.xhtml%3Fuser%3D_random_%26assignment%3D0d117026-483e-49c2-8f81-4246c71c3c9b%26activity%3D3eef79b9-78b9-4033-991b-60f8a5e6fd40%26targets%3DQ1-cntr%26env%3Ddev"
                     }
                 ]
             }

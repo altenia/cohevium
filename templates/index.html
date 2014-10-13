@@ -1,7 +1,7 @@
 <html ng-app="CoheviumWebApp">
 <head>
   <title>Cohevium</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+  <script src="/public/js/angular.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -37,13 +37,13 @@
       </div>
     </div>
 
-    <div class="container">
+    <div >
       <div class="row">
-        <div class="col-md-3">
+        <div class="side-bar" style="width:300px">
           {{ items.menu }}
           Menu
         </div>
-        <div class="col-md-9">
+        <div class="content-pane">
           {{ items.content }}
           Content
         </div>
