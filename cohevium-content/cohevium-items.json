@@ -1,19 +1,34 @@
 {
-    "description": "Cohevioum Item description",
+    "description": "Cohevioum Content Loading Description",
     "version": "1.0",
     "appInfo": {
             "name": "Cohevium",
             "description": "Content Manager"
         },
-    "items": [
-        {
-            "name" : "content",
+    "!doc": "theme is combinatin of template and items, it can be configured per path_prefix",
+    "theme": {
+            "common_items": ["content", "side_menu"],
+            "default_template": "default",
+            "path_prefixes": {
+                "hello": {
+                    "template": "index",
+                    "items": ["content", "side_menu"]
+                },
+                "/public": {
+                    "template": "index",
+                    "items": ["content", "side_menu"]
+                }
+            }
+        },
+    "items": {
+        "content": {
+            "name": "content",
             "module" : "html",
             "renderer": "HtmlFileRenderer",
             "config": {
             }
         },
-        {
+        "side_menu": {
             "name": "side_menu",
             "module": "menu",
             "renderer": "MenuRenderer",
@@ -40,6 +55,6 @@
                 ]
             }
         }
+    }
 
-    ]
 }

@@ -9,14 +9,18 @@ var port = nconf.get('port');
 var contentBaseDir = nconf.get('contentBaseDir');
 var logConf = nconf.get('log');
 
-var server = new Hapi.Server(port, {
-    cors: true
-});
-
-server.pack.register([
-      { plugin: require("lout") },
-      { plugin: require("./index"), options: { contentBaseDir: contentBaseDir, log: logConf}
+var server = new Hapi.Server();
+server.connection(
+    { 
+      port: port, 
+      labels: 'main',
+      routes: { cors: true } 
     }
+  );
+
+server.register([
+      { register: require("lout") },
+      { register: require("./index"), options: { contentBaseDir: contentBaseDir, log: logConf} }
 ], function(err) {
     if (err) throw err;
     server.start(function() {

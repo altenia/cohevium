@@ -22,15 +22,24 @@
   },
   "homepage": "https://github.com/altenia/cohevium",
   "dependencies": {
-    "bunyan": "^1.0.1",
-    "handlebars": "~2.0.0",
-    "joi": "^4.6.2",
-    "nconf": "^0.6.9"
+    "async": "^0.9.0",
+    "bunyan": "^1.3.3",
+    "fast-json-patch": "^0.5.1",
+    "handlebars": "^3.0.0",
+    "hapi": "^8.2.0",
+    "hoek": "^2.11.0",
+    "joi": "^5.1.0",
+    "lodash": "^3.2.0",
+    "lout": "^6.1.0",
+    "nconf": "^0.7.1",
+    "node-uuid": "^1.4.2",
+    "promise": "^6.1.0",
+    "when": "^3.7.2"
   },
   "devDependencies": {
-    "hapi": "^6.7.1",
-    "hoek": "^2.4.1",
-    "joi": "^4.6.2",
-    "lout": "^5.0.2"
+    "chai": "^2.0.0",
+    "mocha": "^2.1.0",
+    "should": "^5.0.0",
+    "sinon": "^1.12.2"
   }
 }

@@ -1,6 +1,6 @@
 <html ng-app="CoheviumWebApp">
 <head>
-  <title>{{ appInfo.name }}</title>
+  <title>Cohevium</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -12,7 +12,6 @@
 </head>
 <body ng-controller="MainCtrl">
 
-<div class="wrapper">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -22,7 +21,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">{{ appInfo.name }}</a>
+        <a class="navbar-brand" href="#">Project: {{{ appInfo.name }}}</a>
       </div>
       <div class="navbar-collapse collapse">
         <form class="navbar-form navbar-right" role="form">
@@ -32,21 +31,24 @@
     </div>
   </div>
 
-  <div class="container-fluid fill">
-    <div class="row-fluid">
-      <div id="pane-menu" style="width:180px; float: left">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
         {{{ items.side_menu.result }}}
       </div>
-      <div id="pane-content" style="margin-left:180px; overflow:hidden">
+      <div class="col-xs-9">
         {{{ items.content.result }}}
       </div>
     </div>
   </div>
 
-  <hr style="height: 3px;"/>
-    Cohevium! ver. {{ serverInfo.REPODIUM_VER }}
-    <a href="https://github.com/altenia/cohevium"/><i class="fa fa-github fa-2"></i></a>
-</div> <!-- /wrapper -->
+  <hr />
+
+    <footer>
+      <p>Cohevium ver. {{ serverInfo.COHEVIUM_VER }}
+      <a href="https://github.com/altenia/cohevium"/><i class="fa fa-github fa-2"></i></a></p>
+    </footer>
+  </div> <!-- /container -->
 
   <!-- MODAL Dialog -->
   <!-- Modal -->
@@ -66,7 +68,6 @@
       </div>
     </div>
   </div>
-
 
 <script>
 var coheviumApp = angular.module('CoheviumWebApp');
