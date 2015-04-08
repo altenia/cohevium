@@ -1,6 +1,7 @@
 {
 	"port": 8080,
 	"contentBaseDir": null,
+	"modulesBaseDir": null,
 
 	"log": {
 		"level": "debug",
