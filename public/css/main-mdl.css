@@ -1,0 +1,54 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  
+}
+
+.site-slogan {
+	font-family: 'Handlee', cursive;
+	color: white;
+}
+
+.mdl-tabs__tab--mainnav {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 1.4em;
+}
+
+.mission-card {
+	min-height: 30px;
+	border-radius: 5px;
+}
+
+.level-progress {
+	height:10px;
+}
+
+.coins-box {
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 1.4em;
+	white-space: nowrap;
+}
+
+.content-container {
+	width: 100%;
+	float: left;
+	margin-right: -200px;
+}
+#content-pane {
+	margin-right: 200px;
+
+}
+#action-pane {
+	width: 150px;
+	padding: 4px;
+	float: right;
+
+}
+.clearing {
+	height: 0;
+	clear: both;
+}
+
+.action-button {
+	width:100%;
+}

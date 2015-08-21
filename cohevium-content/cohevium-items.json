@@ -10,8 +10,8 @@
             "common_items": ["content", "side_menu"],
             "default_template": "default",
             "path_prefixes": {
-                "hello": {
-                    "template": "index",
+                "mathnia-": {
+                    "template": "default-mdl",
                     "items": ["content", "side_menu"]
                 },
                 "/public": {

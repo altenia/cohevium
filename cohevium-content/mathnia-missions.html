@@ -1,0 +1,98 @@
+    <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="page-content mdl-layout--fixed-header ">
+
+          <!-- tabs -->
+          <header class="mdl-layout__header mdl-color--light-blue-200">
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+              <div class="mdl-tabs__tab-bar">
+                <a href="#dashboard-panel" class="mdl-tabs__tab is-active mdl-tabs__tab--mainnav"><img src="../public/icons/home-48.png" border="0"/> My Place</a>
+                <a href="#myworld-panel" class="mdl-tabs__tab mdl-tabs__tab--mainnav"><img src="../public/icons/678074-map-48.png" border="0"/> My World</a>
+                <a href="#mission-panel" class="mdl-tabs__tab mdl-tabs__tab--mainnav"><img src="../public/icons/rocket-48.png" border="0"/> Missions</a>
+                <a href="#progress-panel" class="mdl-tabs__tab mdl-tabs__tab--mainnav"><img src="../public/icons/analytics-48.png" border="0"/> Progress</a>
+              </div>
+              <div class="mdl-tabs__panel " id="dashboard-panel"></div>
+              <div class="mdl-tabs__panel " id="myworld-panel"></div>
+              <div class="mdl-tabs__panel " id="mission-panel"></div>
+              <div class="mdl-tabs__panel " id="progress-panel"></div>
+            </div>
+          </header>
+
+          <!-- Your content goes here -->
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col ">
+              <!-- SIDE PANE -->
+              
+              <div class="profile-container mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop " >
+                <div class="mdl-card__title">1st Grade (MA, USA)</div>
+                <div class="mdl-card__media">
+                  <img src="../public/images/chihuahua-icon.png" width="173"  border="0" />
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Jane Doe
+                  </a>
+                </div>
+              </div>
+
+              <span class="coins-box" >
+                <img src="../public/icons/coin.png" > 250
+              </span>
+              <div id="level-progress" class="level-progress mdl-progress mdl-js-progress mdl-cell mdl-cell--12-col-desktop "></div>
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--8-col ">
+              <!-- CONTENT PANE -->
+              <h4>Missions</h4>
+              <hr />
+              <div class="missions-container mdl-grid">
+                
+                <div class="mission-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="missions-container mdl-grid">
+                      <div class="mdl-cell mdl-cell--4-col" style="background-color: #fafafa">
+                        <img src="../public/icons/plus.png" width="20" >
+                        <span style="white-space: nowrap;">30<img src="../public/icons/coin.png" width="15"></span>
+                      </div>
+                      <div class="mdl-cell mdl-cell--8-col">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Addition up to 10</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="mission-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="missions-container mdl-grid">
+                      <div class="mdl-cell mdl-cell--4-col" style="background-color: #fafafa">
+                        <img src="../public/icons/plus.png" width="20" >
+                        <span style="white-space: nowrap;">30<img src="../public/icons/coin.png" width="15"></span>
+                      </div>
+                      <div class="mdl-cell mdl-cell--8-col">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Addition up to 10</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="mission-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="missions-container mdl-grid">
+                      <div class="mdl-cell mdl-cell--4-col" style="background-color: #fafafa">
+                        <img src="../public/icons/plus.png" width="20" >
+                        <span style="white-space: nowrap;">30<img src="../public/icons/coin.png" width="15"></span>
+                      </div>
+                      <div class="mdl-cell mdl-cell--8-col">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Addition up to 10</span>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+          </div> <!-- grid -->
+          
+        </div>
+      </main>
+
+        <script>
+  document.querySelector('#level-progress').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(44);
+  });
+  </script>

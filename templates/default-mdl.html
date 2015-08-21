@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.orange-blue.min.css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter|Handlee' rel='stylesheet' type='text/css'>
+    <link href="/cohevium/public/css/main-mdl.css" rel="stylesheet">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!-- Uses a header that contracts as the page scrolls down. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class=" mdl-layout__header-row" >
+          <!-- Title -->
+          <img src="../public/logo.png" border="0" height="70"/><span class="mdl-layout-title"></span>
+          <button class="mdl-button mdl-js-button mdl-color-text--yellow-A200">ABOUT</button>
+          <button class="mdl-button mdl-js-button mdl-color-text--yellow-A200">MEMBERSHIP</button>
+          <div class="mdl-layout-spacer"></div>
+          <form action="#" class="mdl-layout--large-screen-only">
+            <div class="mdl-textfield mdl-js-textfield " style="width:150px">
+              <input class="mdl-textfield__input" type="text" id="ID" />
+              <label class="mdl-textfield__label" for="sample1">Id</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield " style="width:150px">
+              <input class="mdl-textfield__input" type="text" id="password" />
+              <label class="mdl-textfield__label" for="sample1">Password</label>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+              SIGNIN
+            </button>
+          </form>
+          <div class="mdl-layout--small-screen-only">
+              <button class="mdl-button mdl-js-button mdl-color-text--yellow-A200">SIGN UP</button>
+          </div>
+        </div>
+        
+        <!-- Bottom row, not visible on scroll -->
+        <div class="mdl-layout__header-row">
+          <span class="site-slogan mdl-layout-title">Learn while having fun</span>
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">FOR PARENTS</a>
+            <a class="mdl-navigation__link" href="">FOR TEACHERS</a>
+          </nav>
+        </div>
+      </header>
+
+      {{{ items.content.result }}}
+
+      
+    </div>
+
+  </body>
+</html>
